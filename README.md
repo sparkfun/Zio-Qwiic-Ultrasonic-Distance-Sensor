@@ -1,22 +1,13 @@
-# Zio Qwiic Ultrasonic Distance Sensor (HC-SR04)
+SparkFun Qwiic Ultrasonic Distance Sensor (HC-SR04) 
+========================================
 
-![](usd.png)
+![SparkFun Qwiic Ultrasonic Distance Sensor (HC-SR04)](https://cdn.sparkfun.com/assets/parts/1/6/9/1/6/17777-SparkFun_Qwiic_Ultrasonic_Distance_Sensor_-_HC-SR04-01.jpg)
 
-> This product can be available for purchase [here](https://www.smart-prototyping.com/Zio-Ultrasonic-Distance-Sensor.html).
+[*SparkFun Qwiic Ultrasonic Distance Sensor (HC-SR04) (17777)*](https://www.sparkfun.com/products/17777)
 
+You may be familiar with the classic [HC-SR04 distance sensor](https://www.sparkfun.com/products/15569), it is great for providing non-contact distance readings from 2cm to 400cm. The SparkFun Qwiic Ultrasonic Distance Sensor improves on the classic by adding a pair of Qwiic connectors to it, so now you can communicate over I<sup>2</sup>C and daisy chain any other Qwiic product of your choosing. 
 
-
-#### Description
-
-This is a [Qwiic](https://www.smart-prototyping.com/Qwiic.html) I2C version of ultrasonic sensor in our Qwiic family. TOF sensor is great, precise and fast, but this Ultrasonic sensor can provide wider detecting angle than TOF sensor and longer distance (3-400cm).
-
-With this module we used a STM8 MCU as gateway to deal with sensor’s digital data in MCU, and send it out via I2C. So you don’t need to care about how it works inside the STM8, just trade it as an I2C device. In case you are interesting, you can check out the STM8 code at the bottom of the links.
-
-We also break the serial pins just like the normal HC-SR04 module. The pins are not pre-soldered. We use an MCU (ATTINY85-20SU) as gateway to turn it into an I2C device.
-
-For additional information on how the Ultrasonic sensor works, you can check out this [page](http://arduinoinfo.mywikis.net/wiki/UltraSonicDistance)!
-
-Note: Try to avoid touching the pins and pads on the backside, the sensor measurement is based on analog single, touching these pins and pads will make the result unstable. 
+If you prefer to bypass the Qwiic connector and I<sup>2</sup>C you can also access the VCC, Trigger, Echo, and Ground pins broken out on the edge of the board. Please be aware that this ultrasonic sensor comes uncalibrated and you will need manipulate the raw output for your specific application. 
 
 #### Specification
 
@@ -30,15 +21,37 @@ Note: Try to avoid touching the pins and pads on the backside, the sensor measur
 * Weight: 9.2g
 
 
+Repository Contents
+-------------------
 
-#### Links
+* **/Arduino** - Libraries and examples
+* **/Eagle** - Eagle design files (.brd, .sch)
+* **/Gerber** - Gerber files
+* **/STM8 Gateway Firmware** - Firmware for the Qwiic Ultrasonic Distance Senso
 
-* [Eagle File](https://github.com/ZIOCC/Zio-Qwiic-Ultrasonic-Distance-Sensor/)
-* [Example Code](https://github.com/ZIOCC/Zio-Qwiic-Ultrasonic-Distance-Sensor/tree/master/Arduino)
+Documentation
+--------------
+* **[Library](GitHub library URL)** - <LANGUAGE> library for the <PRODUCT NAME>.
+* **[Hookup Guide](Learn.SparkFun URL)** - Basic hookup guide for the <PRODUCT NAME>.
+* **[SparkFun Fritzing repo](https://github.com/sparkfun/Fritzing_Parts)** - Fritzing diagrams for SparkFun products.
+* **[SparkFun 3D Model repo](https://github.com/sparkfun/3D_Models)** - 3D models of SparkFun products. 
+* **[SparkFun Graphical Datasheets](https://github.com/sparkfun/Graphical_Datasheets)** -Graphical Datasheets for various SparkFun products.
+
+
+License Information
+-------------------
+
+This product is _**open source**_! 
+
+Please review the LICENSE.md file for license information. 
+
+If you have any questions or concerns on licensing, please contact technical support on our [SparkFun forums](https://forum.sparkfun.com/viewforum.php?f=152).
+
+Distributed as-is; no warranty is given.
+
+- Your friends at SparkFun.
+
+_This part was developed in conjunction with Zio_
 
 
 
-
-
-###### About Zio
-> Zio is a new line of open sourced, compact, and grid layout boards, fully integrated for Arduino and Qwiic ecosystem. Designed ideally for wearables, robotics, small-space limitations or other on the go projects. Check out other awesome Zio products [here](https://www.smart-prototyping.com/Zio).
