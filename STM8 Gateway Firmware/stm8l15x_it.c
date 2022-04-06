@@ -535,6 +535,7 @@ if ((sr1 & (I2C_SR1_TXE | I2C_SR1_BTF)) == (I2C_SR1_TXE | I2C_SR1_BTF))
 if (sr1 & I2C_SR1_TXE)
   {
  I2C1->DR =Distance_H;
+ while (!(sr1 & I2C_SR1_BTF)); // wait for [B]yte [T]ransfer [F]inished flag
  I2C1->DR =Distance_L; 
   } 
 else{};
